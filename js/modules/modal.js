@@ -13,12 +13,13 @@ export default class Modal {
   toggleModal() {
     this.containerModal.classList.toggle('ativo');
   }
+
   eventToggleModal(event) {
     event.preventDefault();
     this.toggleModal();
   }
 
-  //adiciona o evento de toggle ao modal
+  // adiciona o evento de toggle ao modal
   cliqueForaModal(event) {
     if (event.target === this.containerModal) {
       this.toggleModal();
